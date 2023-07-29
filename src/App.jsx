@@ -9,15 +9,13 @@ import { darkTheme, theme } from "./theme/Theme";
 const App = () => {
   const { darkMode } = useSelector((store) => store.mode);
   return (
-    <body className={darkMode ? "dark" : ""}>
-      <ThemeProvider theme={darkMode ? darkTheme : theme}>
-        <CssBaseline />
-        <div className="App">
-          <ToastContainer />
-          <Router />
-        </div>
-      </ThemeProvider>
-    </body>
+    <ThemeProvider theme={darkMode ? darkTheme : theme}>
+      <CssBaseline />
+      <div className="App">
+        <ToastContainer />
+        <Router />
+      </div>
+    </ThemeProvider>
   );
 }
 

@@ -27,7 +27,8 @@ const BottomNavigation = () => {
           </Link>
         </li>
         <li>
-          <a onClick={toggleDrawer("right", true)} href="top">
+          {/* eslint-disable jsx-a11y/anchor-is-valid */}
+          <a onClick={toggleDrawer("right", true)} href="#">
             <span className="icon">
               <i className="bx bx-search"></i>
             </span>
