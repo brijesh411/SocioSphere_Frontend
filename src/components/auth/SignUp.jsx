@@ -170,7 +170,7 @@ const SignUp = () => {
               ? "error-input"
               : ""
           }
-          type="text"
+          type="password"
           name="confirm_password"
           id="confirm_password"
           placeholder="Confirm Password"
