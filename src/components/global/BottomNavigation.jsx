@@ -2,8 +2,6 @@ import React from "react";
 import "../../styles/global/bottomnavigation.css";
 import { Link, useLocation } from "react-router-dom";
 import SearchDrawer from "./SearchDrawer";
-import { toast } from "react-toastify";
-import { options } from "../../utils/ToastOptions";
 import { useSelector } from "react-redux";
 
 const BottomNavigation = () => {
