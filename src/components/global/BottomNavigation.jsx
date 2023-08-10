@@ -43,22 +43,7 @@ const BottomNavigation = () => {
             <span className="text">Explore</span>
           </Link>
         </li>
-        <li>
-          <Link
-            onClick={() =>
-              toast.info(
-                "Currently we are working on the message section",
-                options
-              )
-            }
-            to="#"
-          >
-            <span className="icon">
-              <i className="bx bx-message-square"></i>
-            </span>
-            <span className="text">Message</span>
-          </Link>
-        </li>
+     
         <li
           className={pathname === "/profile/" + user?.user?._id ? "active" : ""}
         >
